@@ -11,7 +11,7 @@ public class LaserScript : MonoBehaviour
         transform.Translate(Vector3.up * speed);
     }
 
-    private void OnBecameInvisible()
+    void OnBecameInvisible()
     {
         Destroy(this.gameObject);
     }

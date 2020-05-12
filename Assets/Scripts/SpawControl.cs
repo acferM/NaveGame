@@ -9,7 +9,7 @@ public class SpawControl : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("spawn", 8f, 1f);
+        InvokeRepeating("spawn", 3f, .8f);
     }
 
     void spawn()

@@ -20,6 +20,8 @@ public class playerBehaviour : MonoBehaviour
 
     void move()
     {
+        GetComponent<Animator>().SetFloat("Speed", Input.GetAxis("Horizontal"));
+
         transform.Translate(Vector3.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime);
         transform.Translate(Vector3.up * Input.GetAxis("Vertical") * speed * Time.deltaTime);
     }
